@@ -5,7 +5,33 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255) ;
+}
 
+h1{
+    display: flex;
+    padding: 20px;
+}
+
+.linha-colorida {
+    height: 12px;
+    width: 100%;
+    background: repeating-linear-gradient(
+        
+    );
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(207, 207, 207);
+    flex-direction: column;
+}
 
 
 
