@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,10 @@
     <div class="titulo">
         Component Customizing /SCMTMS/WDCC_FWD_ORDER, Main Page
     </div>
-        
-        <div class="sap-busy-bar"></div>
-        
-        <div class="container">
+
+    <div class="sap-busy-bar"></div>
+
+    <div class="container">
 
         <div class="acoes">
             <button>Save</button>
@@ -30,21 +31,21 @@
             <button>tabela 3</button> <!--colocar imagem da tabela-->
             <button>Adicional Functions</button>
         </div>
-        
-    <main> 
-    
-        <section class="navegacao">
-        
-            <div class="barra-lateral"></div>
-            <h3>Navegação</h3>
 
-            <div class="acoes">
-                <button>New</button>
-                <button>Lixeira</button> <!--colocar imagem da lixeira-->
-                <button>Cópia</button> <!--colocar imagem de duas folhas-->
-                <button>Down</button>
-                <button>Ferramenta</button> <!--colocar imagem de ferramenta-->
-            </div>
+        <main>
+
+            <section class="navegacao">
+
+                <div class="barra-lateral"></div>
+                <h3>Navegação</h3>
+
+                <div class="acoes">
+                    <button>New</button>
+                    <button>Lixeira</button> <!--colocar imagem da lixeira-->
+                    <button>Cópia</button> <!--colocar imagem de duas folhas-->
+                    <button>Down</button>
+                    <button>Ferramenta</button> <!--colocar imagem de ferramenta-->
+                </div>
 
                 <table class="tabela-nav">
                     <thead>
@@ -60,7 +61,7 @@
                             <td>INT</td>
                             <td>&ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
                         </tr>
-                            <tr class="selecionado">
+                        <tr class="selecionado">
                             <td>Main Page</td>
                             <td>MAIN</td>
                             <td>$OTR:/SCMTMS/UI_CMN/ADM_INFO</td>
@@ -113,42 +114,42 @@
                     </tbody>
                 </table>
 
-            </div> 
+    </div>
 
     </section>
 
     <section class="Overview">
-        
+
         <div class="section-title">Overview Page Schema</div>
 
-            <div class="acoes">
-                <button>Page Master Area</button>
-                <button>Section</button> 
-                <button>UIBB</button> 
-                <button>Lixeira</button> <!--colocar imagem da lixeira-->
-                <button>Up</button> 
-                <button>Down</button> 
-                <button class="tabela2">Configure UIBB</button> <!--canto direito-->
-                <button class="tabela2">Ferramenta</button> <!--colocar imagem de ferramenta--> <!--canto direito-->
-            </div>
-             
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Element</th>
-                        <th>Component</th>
-                        <th>Config ID</th>
-                        <th>Windows Name</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Section: SECTION_1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="selecionado">
+        <div class="acoes">
+            <button>Page Master Area</button>
+            <button>Section</button>
+            <button>UIBB</button>
+            <button>Lixeira</button> <!--colocar imagem da lixeira-->
+            <button>Up</button>
+            <button>Down</button>
+            <button class="tabela2">Configure UIBB</button> <!--canto direito-->
+            <button class="tabela2">Ferramenta</button> <!--colocar imagem de ferramenta--> <!--canto direito-->
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Component</th>
+                    <th>Config ID</th>
+                    <th>Windows Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Section: SECTION_1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="selecionado">
                     <td>UIBB: ADM_INFO</td>
                     <td>FPM_FORM_UIBB_GL2</td>
                     <td>/SCMTMS/WDCC_CMN_ADMINDATA</td>
@@ -163,17 +164,17 @@
             </tbody>
         </table>
 
-    <section class="formulario">
-        <div class="section-title">Attributes of UIBB: ADM_INFO</div>
+        <section class="formulario">
+            <div class="section-title">Attributes of UIBB: ADM_INFO</div>
 
             <div class="acoes">
                 <button>Final Flags</button>
             </div>
 
-        <div class="formulario-texto">
-            <label>Window Name:</label>
-            <input type="text" value="FORM_WINDOW">
-        </div>
+            <div class="formulario-texto">
+                <label>Window Name:</label>
+                <input type="text" value="FORM_WINDOW">
+            </div>
 
             <div class="form-row">
                 <label>Config ID:</label>
@@ -181,22 +182,80 @@
             </div>
 
             <div class="form-row">
-                <label>Row Number:</label>
-                <select>
-                    <option>Visible</option>
-                    <option>Hidden and Excluded from Event Loop</option>
-                    <option>Hidden but Processed in Event Loop</option>
-                </select>
+                <label for="instanceId">Instance ID:</label>
+                <input type="text" id="instanceId" name="instanceId">
             </div>
 
             <div class="form-row">
-                <label>Title:</label>
-                <input type="text" value="/SCMTMS/UI_CMN/ADM_INFO">
+                <label for="column">Column:</label>
+                <input type="text" id="column" name="column">
             </div>
+
+            <div class="form-row">
+                <label for="rowNumber">Row Number:</label>
+                <input type="text" id="rowNumber" name="rowNumber">
+            </div>
+
+            <div class="form-row">
+                <label for="sequenceIndex">Sequence Index:</label>
+                <input type="text" id="sequenceIndex" name="sequenceIndex">
+            </div>
+
+            <div class="form-row">
+                <label for="default">Default:</label>
+                <input type="text" id="default" name="default">
+            </div>
+
+            <div class="form-row">
+                <label for="hiddenElement">Hidden Element:</label>
+                <input type="text" id="hiddenElement" name="hiddenElement">
+            </div>
+
+            <div class="form-row">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+            </div>
+
+            <div class="form-row">
+                <label for="image">Image:</label>
+                <input type="text" id="image" name="image">
+            </div>
+
+            <div class="form-row">
+                <label for="padding">Padding:</label>
+                <input type="text" id="padding" name="padding">
+            </div>
+
+            <div class="form-row">
+                <label for="style">Style:</label>
+                <input type="text" id="style" name="style">
+            </div>
+
+            <div class="form-row">
+                <label for="explanationText">Explanation Text:</label>
+                <input type="text" id="explanationText" name="explanationText">
+            </div>
+
+            <div class="form-row">
+                <label for="explanationDocument">Explanation Document:</label>
+                <input type="text" id="explanationDocument" name="explanationDocument">
+            </div>
+
+            <div class="form-row">
+                <label for="defaultEditPage">Default Edit Page:</label>
+                <input type="text" id="defaultEditPage" name="defaultEditPage">
+            </div>
+
+            <div class="form-row">
+                <label for="defaultDetailsPage">Default Details Page:</label>
+                <input type="text" id="defaultDetailsPage" name="defaultDetailsPage">
+            </div>
+
         </section>
     </section>
     </main>
     </div>
 
 </body>
+
 </html>
