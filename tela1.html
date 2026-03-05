@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,163 +9,253 @@
 
 <body>
 
-    <header>
-            <h2>Component Customizing</h2>
-        <div class="linha-colorida"></div>
+    <div class="titulo">
+        Component Customizing /SCMTMS/WDCC_FWD_ORDER, Main Page
+    </div>
+
+    <div class="sap-busy-bar"></div>
+
+    <div class="container">
+
         <div class="acoes">
-            <button class="botao">Save</button>
-            <button class="botao">Cancel</button>
-            <button class="botao">Edit</button>
-            <button class="botao">Save Draft</button>
-            <button class="botao">Load Draft</button>
-            <button class="botao">Undo</button>
-            <button class="botao">Redo</button>
-            <button class="botao">Check</button>
-            <button class="botao">tabela 1</button> <!--colocar imagem da tabela-->
-            <button class="botao">tabela 2</button> <!--colocar imagem da tabela-->
-            <button class="botao">tabela 3</button> <!--colocar imagem da tabela-->
-            <button class="botao">Adicional Functions</button>
+            <button>Save</button>
+            <button>Cancel</button>
+            <button>Edit</button>
+            <button>Save Draft</button>
+            <button>Load Draft</button>
+            <button>Undo</button>
+            <button>Redo</button>
+            <button>Check</button>
+            <button>tabela 1</button> <!--colocar imagem da tabela-->
+            <button>tabela 2</button> <!--colocar imagem da tabela-->
+            <button>tabela 3</button> <!--colocar imagem da tabela-->
+            <button>Adicional Functions</button>
         </div>
-    </header>
-       
-    <main> 
-    <section class="navegacao">
-        
-        <h3>Navegação</h3>
-            <div class="acoes">
-                <button>New</button>
-                <button>Lixeira</button> <!--colocar imagem da lixeira-->
-                <button>Cópia</button> <!--colocar imagem de duas folhas-->
-                <button>Down</button>
-                <button>Ferramenta</button> <!--colocar imagem de ferramenta-->
-            </div>
-            <div id="tabela-repositorios"> 
-                <table>
-                    <tr>
-                        <th>Page Type</th>
-                        <th>Page id</th>
-                        <th>Title</th>
-                    </tr>
-                    <tr>
-                        <td>Initial Page</td>
-                        <td>INT</td>
-                        <td>&ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
-                    </tr>
-                    <tr>
-                        <td>Main Page</td>
-                        <td>MAIN</td>
-                        <td>&ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
-                    </tr>
-                    <tr>
-                        <td>Main Page</td>
-                        <td>MAIN_FAST_E</td>
-                        <td>&ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
-                    </tr>
+
+        <main>
+
+            <section class="navegacao">
+
+                <div class="barra-lateral"></div>
+                <h3>Navegação</h3>
+
+                <div class="acoes">
+                    <button>New</button>
+                    <button>Lixeira</button> <!--colocar imagem da lixeira-->
+                    <button>Cópia</button> <!--colocar imagem de duas folhas-->
+                    <button>Down</button>
+                    <button>Ferramenta</button> <!--colocar imagem de ferramenta-->
+                </div>
+
+                <table class="tabela-nav">
+                    <thead>
+                        <tr>
+                            <th>Page Type</th>
+                            <th>Page id</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Initial Page</td>
+                            <td>INT</td>
+                            <td>&ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
+                        </tr>
+                        <tr class="selecionado">
+                            <td>Main Page</td>
+                            <td>MAIN</td>
+                            <td>$OTR:/SCMTMS/UI_CMN/ADM_INFO</td>
+                        </tr>
+                        <tr>
+                            <td>Main Page</td>
+                            <td>MAIN_FAST_E</td>
+                            <td>&ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
+                        </tr>
+                        <tr>
+                            <td>Main Page</td>
+                            <td>MAIN_FAST_EI</td>
+                            <td>$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td>Dialog Box</td>
+                            <td>ADDRESS_DE</td>
+                            <td>$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td>Dialog Box</td>
+                            <td>ACT_LIST</td>
+                            <td>$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td>Dialog Box</td>
+                            <td>NOTE_HLP</td>
+                            <td>$OTR:/BOFU</td>
+                        </tr>
+                        <tr>
+                            <td>Dialog Box</td>
+                            <td>SEC_FILING_R</td>
+                            <td>$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td>Dialog Box</td>
+                            <td>SEC_FILING_C</td>
+                            <td>$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td>Dialog Box</td>
+                            <td>REPACT_NOTF</td>
+                            <td>$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td>Dialog Box</td>
+                            <td>REPACT_ATF</td>
+                            <td>$OTR:/SCMT</td>
+                        </tr>
+                    </tbody>
                 </table>
-            </div>  
+
+    </div>
+
     </section>
 
     <section class="Overview">
-        <h3>Overview Page Schema</h3>
-            <div class="acoes">
-                <button>Page Master Area</button>
-                <button>Section</button> 
-                <button>UIBB</button> 
-                <button>Lixeira</button> <!--colocar imagem da lixeira-->
-                <button>Up</button> 
-                <button>Down</button> 
-                <button class="tabela2">Configure UIBB</button> <!--canto direito-->
-                <button class="tabela2">Ferramenta</button> <!--colocar imagem de ferramenta--> <!--canto direito-->
-            </div>
-            <div id="tabela-page-schema"> 
-                <table>
-                    <tr>
-                        <th>Element</th>
-                        <th>Component</th>
-                        <th>Config ID</th>
-                        <th>Windows Name</th>
-                    </tr>
-                    <tr>
-                        <td>Section: SECTION_1</td>
-                    </tr>
-                    <tr>
-                        <td>UIBB: $ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
-                        <td>FPM_FORM_UIBB_GL2</td>
-                        <td>/SCMTMS/WDCC_FWO_GEN</td>
-                        <td>FORM_WINDOW</td>
-                    </tr>
-                    <tr>
-                        <td>UIBB: $ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
-                        <td>FPM_FORM_UIBB_GL2</td>
-                        <td>/SCMTMS/WDCC_CMN_ADMINDATA</td>
-                        <td>FORM_WINDOW</td>
-                    </tr>
-                    <tr>
-                        <td>UIBB: $ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
-                        <td>FPM_FORM_UIBB_GL2</td>
-                        <td>/SCMTMS/WDCC_TRQ_BUPA</td>
-                        <td>TABBED_WINDOW</td>
-                    </tr>
-                    <tr>
-                        <td>UIBB: $ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
-                        <td>FPM_FORM_UIBB_GL2</td>
-                        <td>/SCMTMS/WDCC_DOC_FLOW</td>
-                        <td>TREE_WINDOW</td>
-                    </tr>
-                    <tr>
-                        <td>UIBB: $ORT:/SCMTMS/UI_CMN/ADM_INFO</td>
-                        <td>FPM_FORM_UIBB_GL2</td>
-                        <td>/SCMTMS/WDCC_TCM_CHARGES</td>
-                        <td>TABBED_WINDOW</td>
-                    </tr>
-                </table>
-            </div>  
-    </section>
 
-    <section class="formulario">
-        <h3>Attributes of UIBB: </h3>
+        <div class="titulo-secao">Overview Page Schema</div>
+
+        <div class="acoes">
+            <button>Page Master Area</button>
+            <button>Section</button>
+            <button>UIBB</button>
+            <button>Lixeira</button> <!--colocar imagem da lixeira-->
+            <button>Up</button>
+            <button>Down</button>
+            <button class="tabela2">Configure UIBB</button> <!--canto direito-->
+            <button class="tabela2">Ferramenta</button> <!--colocar imagem de ferramenta--> <!--canto direito-->
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Component</th>
+                    <th>Config ID</th>
+                    <th>Windows Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Section: SECTION_1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="selecionado">
+                    <td>UIBB: ADM_INFO</td>
+                    <td>FPM_FORM_UIBB_GL2</td>
+                    <td>/SCMTMS/WDCC_CMN_ADMINDATA</td>
+                    <td>FORM_WINDOW</td>
+                </tr>
+                <tr>
+                    <td>UIBB: TRQ_BUPA</td>
+                    <td>FPM_TABBED_UIBB</td>
+                    <td>/SCMTMS/WDCC_TRQ_BUPA</td>
+                    <td>TABBED_WINDOW</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="formulario">
+            <div class="titulo-selecionado">Attributes of UIBB: ADM_INFO</div>
+
             <div class="acoes">
                 <button>Final Flags</button>
             </div>
-        <div id="formulario-texto">
-            <form>
-                <label for="windowsName">Window Name:</label><br>
-                <input type="text" id="windowsName" name="windowsName"><br>
-                <label for="configId">Config ID:</label><br>
-                <input type="text" id="configId" name="configId"><br>
-                <label for="instanceId">Instance ID:</label><br>
-                <input type="text" id="instanceId" name="instanceId"><br>
-                <label for="column">Column:</label><br>
-                <input type="text" id="column" name="column"><br>
-                <label for="rowNumber">Row Number:</label><br>
-                <input type="text" id="rowNumber" name="rowNumber"><br>
-                <label for="sequenceIndex">Sequence Index:</label><br>
-                <input type="text" id="sequenceIndex" name="sequenceIndex"><br>
-                <label for="default">Default:</label><br>
-                <input type="text" id="default" name="default"><br>
-                <label for="hiddenElement">Hidden Element:</label><br>
-                <input type="text" id="hiddenElement" name="hiddenElement"><br>
-                <label for="title">Title:</label><br>
-                <input type="text" id="title" name="title"><br>
-                <label for="image">Image:</label><br>
-                <input type="text" id="image" name="image"><br>
-                <label for="padding">Padding:</label><br>
-                <input type="text" id="padding" name="padding"><br>
-                <label for="style">Style:</label><br>
-                <input type="text" id="style" name="style"><br>
-                <label for="explanationText">Explanation Text:</label><br>
-                <input type="text" id="explanationText" name="explanationText"><br>
-                <label for="explanationDocument">Explanation Document:</label><br>
-                <input type="text" id="explanationDocument" name="explanationDocument"><br>
-                <label for="defaultEditPage">Default Edit Page:</label><br>
-                <input type="text" id="defaultEditPage" name="defaultEditPage"><br>
-                <label for="defaultDetailsPage">Default Details Page:</label><br>
-                <input type="text" id="defaultDetailsPage" name="defaultDetailsPage"><br>
-            </form>
-        </div>
-    </section>
 
+            <div class="formulario-texto">
+                <label>Window Name:</label>
+                <input type="text" value="FORM_WINDOW">
+            </div>
+
+            <div class="form-row">
+                <label>Config ID:</label>
+                <input type="text" value="/SCMTMS/WDCC_CMN_ADMINDATA">
+            </div>
+
+            <div class="form-row">
+                <label for="instanceId">Instance ID:</label>
+                <input type="text" id="instanceId" name="instanceId">
+            </div>
+
+            <div class="form-row">
+                <label for="column">Column:</label>
+                <input type="text" id="column" name="column">
+            </div>
+
+            <div class="form-row">
+                <label for="rowNumber">Row Number:</label>
+                <input type="text" id="rowNumber" name="rowNumber">
+            </div>
+
+            <div class="form-row">
+                <label for="sequenceIndex">Sequence Index:</label>
+                <input type="text" id="sequenceIndex" name="sequenceIndex">
+            </div>
+
+            <div class="form-row">
+                <label for="default">Default:</label>
+                <input type="text" id="default" name="default">
+            </div>
+
+            <div class="form-row">
+                <label for="hiddenElement">Hidden Element:</label>
+                <input type="text" id="hiddenElement" name="hiddenElement">
+            </div>
+
+            <div class="form-row">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+            </div>
+
+            <div class="form-row">
+                <label for="image">Image:</label>
+                <input type="text" id="image" name="image">
+            </div>
+
+            <div class="form-row">
+                <label for="padding">Padding:</label>
+                <input type="text" id="padding" name="padding">
+            </div>
+
+            <div class="form-row">
+                <label for="style">Style:</label>
+                <input type="text" id="style" name="style">
+            </div>
+
+            <div class="form-row">
+                <label for="explanationText">Explanation Text:</label>
+                <input type="text" id="explanationText" name="explanationText">
+            </div>
+
+            <div class="form-row">
+                <label for="explanationDocument">Explanation Document:</label>
+                <input type="text" id="explanationDocument" name="explanationDocument">
+            </div>
+
+            <div class="form-row">
+                <label for="defaultEditPage">Default Edit Page:</label>
+                <input type="text" id="defaultEditPage" name="defaultEditPage">
+            </div>
+
+            <div class="form-row">
+                <label for="defaultDetailsPage">Default Details Page:</label>
+                <input type="text" id="defaultDetailsPage" name="defaultDetailsPage">
+            </div>
+
+        </section>
+    </section>
     </main>
+    </div>
 
 </body>
+
 </html>
