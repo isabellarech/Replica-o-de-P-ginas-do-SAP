@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard SAP</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -29,11 +29,11 @@
                 <div>
                     <h2>Olá, tudo bem?</h2>
                     <p>Como posso ajudar hoje?</p>
-                    <button class="secondary-btn">Fale comigo!</button>
-                </div>
+            <button class="secondary-btn">Fale comigo!</button>               
+         </div>
             </div>
 
-            <div class="welcome actions">
+           <div class="welcome-actions">
                 <button>QUERO COMPRAR MATERIAL</button>
                 <button>QUERO COMPRAR SERVIÇO</button>
                 <button>CONSULTAR FLUXO DE PROCESSOS</button>
@@ -70,6 +70,12 @@
                         <td>R$ 1250,50</td>
                         <td><span class="status alert">Alerta</span></td>
                     </tr>
+                     <tr>
+                        <td>#125</td>
+                        <td>20/04/2020</td>
+                        <td>R$ 1250,50</td>
+                        <td><span class="status alert">Processado</span></td>
+                    </tr>
                     <tr>
                         <td>#125</td>
                         <td>20/04/2020</td>
@@ -89,13 +95,13 @@
 
         <div class="products">
             <div class="product">
-                <img src="assets/chamex.png" alt="Papel sulfite A4">
+                <img src="assets/chamex.jpg" alt="Papel sulfite A4">
                 <p>Papel Sulfite A4</p>
                 <span>R$ 34,90</span>
             </div>
 
             <div class="product">
-                <img src="assets/sap.png" alt="SAP">
+                <img src="assets/SAP.png" alt="SAP">
                 <p>Solicitar Serviço</p>
                 <span>R$ 125,00</span>
             </div>
@@ -143,16 +149,39 @@
                 <h3>Mensagens e alertas</h3>
                 <a href="#">Ver todas mensagens</a>
             </div>
+           
+            <div class="message">
+    <img src="assets/pessoa1.png" alt="João">
+    <div>
+        <strong>João da Silva</strong>
+        <p>Verificar pagamento do fornecedor.</p>
+    </div>
+</div>
 
-            <div class="message">
-                <strong>João da Silva</strong>
-                <p>Verificar pagamento do fornecedor</p>
-            </div>
-            <div class="message">
-                <strong>Márcio José</strong>
-                <p>Produto precisa de cotação</p>
-            </div>
-        </div>
+<div class="message">
+    <img src="assets/pessoa2.png" alt="Márcio">
+    <div>
+        <strong>Márcio José</strong>
+        <p>Meu produto não foi entregue, consegue me ajudar?</p>
+    </div>
+</div>
+
+<div class="message">
+    <img src="assets/pessoa3.png" alt="Márcio">
+    <div>
+        <strong>João Soares</strong>
+        <p>Quando puder, gostaria de falar com você.</p>
+    </div>
+</div>
+
+<div class="message">
+    <img src="assets/pessoa4.png" alt="Márcio">
+    <div>
+        <strong>Lucas Clarence</strong>
+        <p>Meu serviço não foi entregue, tem alguma dica?</p>
+    </div>
+</div>
+
     </section>
 
 </main>
